@@ -132,14 +132,41 @@ namespace collectionGenericList
             }
 
             //Sorting
-            liste.Sort();//Two different types cannot be sorted.
-            liste.Reverse();//reverse sorting
+            //liste.Sort();//Two different types cannot be sorted.
+            //liste.Reverse();//reverse sorting
 
             //Clear
             liste.Clear();
 
 
 
+            /*
+             * Dictionaries
+            */
+
+            //system.collections.generic
+            Dictionary<int,string> kullanicilardict =  new Dictionary<int,string>();
+
+            kullanicilardict.Add(10, "Enes G");
+            kullanicilardict.Add(12, "Emir G");
+            kullanicilardict.Add(14, "Zikriye Ürkmez");
+            kullanicilardict.Add(2,"Enes GG")
+
+            Console.WriteLine(kullanicilardict[12]);
+            foreach (var item in kullanicilardict)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine(kullanicilardict.Count);
+            Console.WriteLine(kullanicilardict.ContainsKey(12));
+            Console.WriteLine(kullanicilardict.ContainsValue("Enes G"));
+            kullanicilardict.Remove(12);
+
+            foreach(var item in kullanicilardict)
+            {
+                Console.WriteLine(item.Value);
+                Console.WriteLine(item.Key);
+            }
 
 
             Console.ReadLine();
