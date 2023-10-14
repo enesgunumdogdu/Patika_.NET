@@ -1,2 +1,2 @@
 # RecursiveFunction
-### Patika.dev için açılmış recursive dosyası. ###
+### Patika.dev için açılmış recursive metotlar dosyası. ###
