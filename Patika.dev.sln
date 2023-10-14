@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "collectionGenericList", "collectionGenericList\collectionGenericList.csproj", "{AC7A29AC-53A9-4DB6-A66B-F29C0803D176}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Methods", "Methods\Methods.csproj", "{519E64CC-0AAF-4C28-ACFA-77E4A7688C6B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Patika .NET Ödev-1", "Patika .NET Ödev-1\Patika .NET Ödev-1.csproj", "{380846EA-3EE6-4EAE-997C-8449AAD450F0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecursiveFunction", "RecursiveFunction\RecursiveFunction.csproj", "{5D61AE6C-A17A-4A24-A865-85DA4E74D250}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC7A29AC-53A9-4DB6-A66B-F29C0803D176}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC7A29AC-53A9-4DB6-A66B-F29C0803D176}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC7A29AC-53A9-4DB6-A66B-F29C0803D176}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC7A29AC-53A9-4DB6-A66B-F29C0803D176}.Release|Any CPU.Build.0 = Release|Any CPU
+		{519E64CC-0AAF-4C28-ACFA-77E4A7688C6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{519E64CC-0AAF-4C28-ACFA-77E4A7688C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{519E64CC-0AAF-4C28-ACFA-77E4A7688C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{519E64CC-0AAF-4C28-ACFA-77E4A7688C6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{380846EA-3EE6-4EAE-997C-8449AAD450F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{380846EA-3EE6-4EAE-997C-8449AAD450F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{380846EA-3EE6-4EAE-997C-8449AAD450F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{380846EA-3EE6-4EAE-997C-8449AAD450F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D61AE6C-A17A-4A24-A865-85DA4E74D250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D61AE6C-A17A-4A24-A865-85DA4E74D250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D61AE6C-A17A-4A24-A865-85DA4E74D250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D61AE6C-A17A-4A24-A865-85DA4E74D250}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {55050B98-5EB5-4E2B-B49F-2D1017801106}
+	EndGlobalSection
+EndGlobal
