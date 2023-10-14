@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace collectionGenericList
@@ -100,6 +101,46 @@ namespace collectionGenericList
             {
                 Console.WriteLine("Kullanıcı adı: " + kullanici.Isim + "\nKullanıcı soyadı: " + kullanici.Soyisim + "\nKullanıcı yaşı: " + kullanici.Yas + "\n");
             }
+
+            /*
+             * Arraylists
+            */
+            //System.Collections.namespace
+            Console.WriteLine("Arraylists");
+
+            ArrayList liste= new ArrayList();
+            liste.Add("Ayşe");
+            liste.Add(2);
+            liste.Add(true);
+            liste.Add(2.15);
+            liste.Add('A');
+
+            Console.WriteLine(liste[1]);
+            foreach(var item in liste)
+            {
+                Console.WriteLine(item);
+            }
+
+            //Addrange
+            string[] renkler = { "mavi", "enesturuncusu", "yeşil" };
+            List<int> sayilar = new List<int>() {1,3,5,6,7,8,9,0,921512};
+            liste.AddRange(renkler);
+            liste.AddRange(sayilar);
+            foreach (var item in liste)
+            {
+                Console.WriteLine(item);
+            }
+
+            //Sorting
+            liste.Sort();//Two different types cannot be sorted.
+            liste.Reverse();//reverse sorting
+
+            //Clear
+            liste.Clear();
+
+
+
+
 
             Console.ReadLine();
         }
