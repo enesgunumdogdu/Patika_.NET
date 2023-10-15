@@ -13,6 +13,7 @@ namespace Odev2
                 *Her bir dizinin elemanlarını büyükten küçüğe olacak şekilde ekrana yazdırın.
                 *Her iki dizinin eleman sayısını ve ortalamasını ekrana yazdırın.
             */
+            /*
             List<int> asallar = new List<int>();
             List<int> sayilar = new List<int>();
             sayilar.Clear();
@@ -75,14 +76,9 @@ namespace Odev2
             {
                 Console.WriteLine(item);
             }
-            
-
-            
-            Console.ReadLine();
 
 
-
-
+            */
 
 
             /*
@@ -90,12 +86,30 @@ namespace Odev2
              * her iki grubun kendi içerisinde ortalamalarını alan ve bu ortalamaları ve ortalama toplamlarını console'a yazdıran programı yazınız.
              * (Array sınıfını kullanarak yazınız.)
             */
-
+            int[] sayilar = new int[20];
+            Console.WriteLine("Lütfen 20 adet sayı giriniz.\n->Negatif sayı girişi yapabilirsiniz.");
+            int enkucuk = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < 20; i++)
+            {
+                int x = Convert.ToInt32(Console.ReadLine());
+                sayilar[i] = x;
+            }
+            Array.Sort(sayilar);
+            float buyukort = (sayilar[19] + sayilar[18] + sayilar[17])/3;
+            float kucukort = (sayilar[0] + sayilar[1] + sayilar[2]) / 3;
+            Console.WriteLine("Girilen en küçük sayı = " + sayilar[0] + ", ve en büyük sayı = " + sayilar[19]);
+            Console.WriteLine("\nGirilen En büyük üç sayı sırasıyla-> " + sayilar[19] + "," + sayilar[18] + "," + sayilar[17]);
+            Console.WriteLine("\nGirilen en küçük üç sayı sırasıyla-> " + sayilar[0] + "," + sayilar[1] + "," + sayilar[2]);
+            Console.WriteLine("\n En küçük üç sayının ortalaması = -> " + kucukort);
+            Console.WriteLine("\n En büyük üç sayının ortalaması = -> " + buyukort);
+            Console.WriteLine("\n Ortalama toplamları  = -> "+ (buyukort + kucukort));
 
             /*
              * Soru - 3: Klavyeden girilen cümle içerisindeki sesli harfleri bir dizi içerisinde saklayan ve dizinin elemanlarını sıralayan programı yazınız.
             */
 
+
+            Console.ReadLine();
         }
     }
 }
