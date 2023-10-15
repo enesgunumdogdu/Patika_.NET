@@ -13,7 +13,7 @@ namespace Odev2
                 *Her bir dizinin elemanlarını büyükten küçüğe olacak şekilde ekrana yazdırın.
                 *Her iki dizinin eleman sayısını ve ortalamasını ekrana yazdırın.
             */
-            /*
+            
             List<int> asallar = new List<int>();
             List<int> sayilar = new List<int>();
             sayilar.Clear();
@@ -78,7 +78,7 @@ namespace Odev2
             }
 
 
-            */
+            
 
 
             /*
@@ -86,6 +86,8 @@ namespace Odev2
              * her iki grubun kendi içerisinde ortalamalarını alan ve bu ortalamaları ve ortalama toplamlarını console'a yazdıran programı yazınız.
              * (Array sınıfını kullanarak yazınız.)
             */
+
+            
             int[] sayilar = new int[20];
             Console.WriteLine("Lütfen 20 adet sayı giriniz.\n->Negatif sayı girişi yapabilirsiniz.");
             int enkucuk = Convert.ToInt32(Console.ReadLine());
@@ -103,11 +105,37 @@ namespace Odev2
             Console.WriteLine("\n En küçük üç sayının ortalaması = -> " + kucukort);
             Console.WriteLine("\n En büyük üç sayının ortalaması = -> " + buyukort);
             Console.WriteLine("\n Ortalama toplamları  = -> "+ (buyukort + kucukort));
+            
+
 
             /*
              * Soru - 3: Klavyeden girilen cümle içerisindeki sesli harfleri bir dizi içerisinde saklayan ve dizinin elemanlarını sıralayan programı yazınız.
             */
+            //String[] cumle = new string[];
+            Console.WriteLine("Lütfen bir cümle giriniz:");
+            string cumle = Console.ReadLine().ToUpper();
+            char[] sesliHarfler = { 'A', 'E', 'U', 'Ü', 'O', 'Ö', 'I', 'İ' };
+            char[] sesliHarfDizi = new char[cumle.Length];
+            int index = 0;
 
+            for (int i = 0; i < cumle.Length; i++)
+            {
+                char karakter = cumle[i];
+                if (Array.Exists(sesliHarfler, harf => harf == karakter))
+                {
+                    sesliHarfDizi[index] = karakter;
+                    index++;
+                }
+            }
+
+            Array.Resize(ref sesliHarfDizi, index);
+            Array.Sort(sesliHarfDizi);
+
+            Console.WriteLine("Cümledeki sesli harfler aşağıdaki gibidir:");
+            foreach (char harf in sesliHarfDizi)
+            {
+                Console.Write(harf + " ");
+            }
 
             Console.ReadLine();
         }
