@@ -77,16 +77,11 @@ namespace Odev2
                 Console.WriteLine(item);
             }
 
-
-            
-
-
             /*
              * Soru - 2: Klavyeden girilen 20 adet sayının en büyük 3 tanesi ve en küçük 3 tanesi bulan,
              * her iki grubun kendi içerisinde ortalamalarını alan ve bu ortalamaları ve ortalama toplamlarını console'a yazdıran programı yazınız.
              * (Array sınıfını kullanarak yazınız.)
             */
-
             
             int[] sayilar = new int[20];
             Console.WriteLine("Lütfen 20 adet sayı giriniz.\n->Negatif sayı girişi yapabilirsiniz.");
@@ -105,13 +100,12 @@ namespace Odev2
             Console.WriteLine("\n En küçük üç sayının ortalaması = -> " + kucukort);
             Console.WriteLine("\n En büyük üç sayının ortalaması = -> " + buyukort);
             Console.WriteLine("\n Ortalama toplamları  = -> "+ (buyukort + kucukort));
-            
-
 
             /*
              * Soru - 3: Klavyeden girilen cümle içerisindeki sesli harfleri bir dizi içerisinde saklayan ve dizinin elemanlarını sıralayan programı yazınız.
             */
             //String[] cumle = new string[];
+
             Console.WriteLine("Lütfen bir cümle giriniz:");
             string cumle = Console.ReadLine().ToUpper();
             char[] sesliHarfler = { 'A', 'E', 'U', 'Ü', 'O', 'Ö', 'I', 'İ' };
