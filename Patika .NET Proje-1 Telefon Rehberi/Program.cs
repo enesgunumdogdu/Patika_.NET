@@ -8,19 +8,21 @@ namespace Telefon_Rehberi
         static List<Kisi> rehber = new List<Kisi>();
         static void Main(string[] args)
         {
+            int x = 2;
             rehber.Add(new Kisi { Isim = "Enes", Soyisim = "Günümdoğdu", TelefonNumarasi = "05327851721" });
             rehber.Add(new Kisi { Isim = "Emir", Soyisim = "Başaran", TelefonNumarasi = "05428213506" });
             rehber.Add(new Kisi { Isim = "Fatih", Soyisim = "Taner", TelefonNumarasi = "05435940556" });
             rehber.Add(new Kisi { Isim = "Onur", Soyisim = "Elibüyük", TelefonNumarasi = "05253035489" });
             rehber.Add(new Kisi { Isim = "Eren", Soyisim = "Koçak", TelefonNumarasi = "05686752234" });
-            while (true)
+            while (x == 2)
             {
                 Console.WriteLine("\nLütfen yapmak istediğiniz işlemi seçiniz: ");
                 Console.WriteLine("(1) Yeni Numara Kaydetmek");
                 Console.WriteLine("(2) Varolan Numarayı Silmek");
                 Console.WriteLine("(3) Varolan Numarayı Güncelleme");
                 Console.WriteLine("(4) Rehberi Listelemek");
-                Console.WriteLine("(5) Rehberde Arama Yapmak\n");
+                Console.WriteLine("(5) Rehberde Arama Yapmak");
+                Console.WriteLine("(0) Çıkış Yapmak");
                 string input = Console.ReadLine();
                 int cevap;
 
@@ -42,6 +44,9 @@ namespace Telefon_Rehberi
                             break;
                         case 5:
                             AramaYap();
+                            break;
+                        case 0:
+                            x = 3;
                             break;
                         default:
                             Console.WriteLine("Hatalı tuşlama yaptınız. Lütfen menüde belirtilen sayılardan birini giriniz.");
